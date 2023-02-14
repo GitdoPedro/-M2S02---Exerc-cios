@@ -20,8 +20,11 @@ public class ex16 {
 
         System.out.println("Digite o número da pessoa desejada: ");
         int numero = scanner.nextInt();
-        System.out.println(pessoas.get(numero-1));
-
+        if (numero < qtd || numero < 1) {
+            System.out.println("Posição inexistente");
+        }else{
+            System.out.println(pessoas.get(numero - 1));
+        }
 
     }
 }
